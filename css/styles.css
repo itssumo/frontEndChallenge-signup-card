@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
     Font-size: 16px;
@@ -5,6 +6,7 @@ body{
     background-image: url("../images/bg-intro-desktop.png");
     width: 70%;
     margin: 5% auto;
+    overflow: hidden;
 }
 .shadow{
     -webkit-box-shadow: 0px 8px 6px 3px rgba(0,0,0,0.35);
@@ -19,6 +21,7 @@ body{
 }
 .info{
     color:#fff;
+    padding-right: 50px;
 }
 .info h1{
     font-size: 2.5rem;
@@ -30,17 +33,17 @@ body{
 
 .col .plan{
     background-color:#6055a5;
-    padding: 20px 0;
+    padding: 20px ;
     font-weight: 300;
     color:#fff;
     text-align: center;
     border-radius: 10px;
     margin-bottom: 25px;
-     /* #3e3c49 ; */
 }
 .col .plan span{
     font-weight: 700;
 }
+/* ///////////////////////////////////////////Form\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .form-1{
     background-color: #fff;
     padding: 30px;
@@ -57,7 +60,7 @@ body{
 
 }
 form>input{
-    font-weight: 700;
+    font-weight: 600;
     border: 1px solid #b9b6d3;
     border-radius: 5px;
     color: #3e3c49ba;
@@ -65,7 +68,8 @@ form>input{
 form>input:focus{
     outline: 1px solid #3e3c49;
     color: #3e3c49;
-    font-weight: 700;
+    font-weight:700;
+    
 }
 form>button{
     background-color: #38cc8c;
@@ -81,7 +85,7 @@ form>button:hover{
 }
 .form-1 form .error{
     margin: 0 10px 0 0 ;
-    font-size: 12px;
+    font-size: 0.8rem;
     font-style: italic;
     text-align: right;
     color: #ff7a7a;
@@ -92,22 +96,51 @@ form>button:hover{
     border:2px solid #ff7a7a;
     background-image: url("../images/icon-error.svg");
     background-repeat: no-repeat;
-    background-position: 410px;
-   
+    background-position-y: center;
+    background-position-x: calc(100% - 5%);
     
 }
 .form-1 .footer{
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
     color:#b9b6d3;
     font-weight: 600;
+    padding: 0 10px;
 }
 .form-1 p a{
     text-decoration: none;
     color:#ff7a7a
 }
+/* //////////////////////////////////////Responsive\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+@media only screen and (max-width: 600px){
+    body{
+        /* font-size: 12px; */
+        margin: 10% auto;
+        background-image: url("../images/bg-intro-mobile.png");
+        
+    }
+    .info{
+        padding-right: 0;
+    }
+    .info h1{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .info p{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .form-1{
+        padding: 10px;
+    }
+    .form-1 .error{
+        font-size: 8px;
+    }
 
-
+}
 
 
 
